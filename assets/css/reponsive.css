@@ -3,6 +3,36 @@
     .hide-on-moblie-tablet {
         display: none;
     }
+
+    .header__search {
+        flex-grow: unset;
+    }
+
+    .btn--nav--mobile {
+        display: inline-block;
+        font-size: 2.5rem;
+        background-color: #198754;
+        color: var(--white-color);
+        position: fixed;
+        right: 0;
+        top: 10px;
+        z-index: 100;
+    }
+
+    .btn--nav--mobile:hover {
+        background-color: #10663e;
+    }
+
+    .header__nav--mobile {
+        position: fixed;
+        top: 0;
+        right: 0;
+        display: none;
+    }
+
+    .header__list--mobile {
+        flex-direction: column;
+    }
 }
 
 /* Tablet */

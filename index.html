@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./assets/css/reponsive.css">
 </head>
 <body>
+    
     <div class="app">
         <!-- Nav header -->
         <header class="container-fluid">
@@ -23,10 +24,11 @@
                 </a>
                 <form class="d-flex header__search">
                     <input class="form-control form-control-xl me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                  </form>
-                <nav class="header__nav">
-                    <ul class="header__list">
+                    <button class="btn btn-outline-success btn--big" type="submit">Search</button>
+                </form>
+                <button class="btn btn-outline-success btn--big btn--nav--mobile" id="btn--nav--mobile" ><i class="fas fa-bars"></i></button>
+                <nav class="header__nav header__nav--mobile">
+                    <ul class="header__list header__list--mobile">
                         <li class="header__items">
                             <a href="#" class="header__link">Home</a>
                         </li>
@@ -45,8 +47,10 @@
             
         </header>
 
+        <!-- Wapper -->
         <div class="container wapper">
             <div class="row">
+
                 <div class="col-xl-6">
                     <a href="#" class="wapper__container">
                         <div class="wapper__items" style="background-image: url(./assets/img/theme/winter/bg.jpg);">
@@ -69,73 +73,15 @@
                                     </div>
                                 </div>
                                 <div class="wapper__img-4">
-                                    <img src="./assets/img/theme/winter/wintter-4.jpg" class="wapper--img-4__img">
+                                    <img src="./assets/img/theme/winter/img-4.jpg" class="wapper--img-4__img">
                                 </div>
-
+                            </div>
+                            <div class="wapper__new">
+                                <img src="./assets/img/items/new.png" class="wapper--new__img">
                             </div>
                         </div>
                     </a>
-                </div>
-
-                <div class="col-xl-6">
-                    <a href="#" class="wapper__container">
-                        <div class="wapper__items" style="background-image: url(./assets/img/theme/town//bg.jpg);">
-                            <div class="wapper__up">
-                                <img src="./assets/img/items/logo-wapper.png" class="wapper__logo">
-                                <h4 class="wapper__collection">collection#160</h4>
-                            </div>
-                            <div class="wapper__down">
-                                <div class="wapper__date">
-                                    <h3 class="wapper__title">First Snow</h3>
-                                    <div class="wapper-down__bottom">
-                                        <div class="wapper__photos">
-                                            <h4 class="wapper-photos__name">PHOTOS</h4>
-                                            <h4 class="wapper-photos__number">132</h4>
-                                        </div>
-                                        <div class="wapper__publish">
-                                            <h4 class="wapper-publish__name">PUSBLISHED</h4>
-                                            <h4 class="wapper-publish__date">1 WEEK AGO</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="wapper__img-4">
-                                    <img src="./assets/img/theme/town/bg.jpg" class="wapper--img-4__img">
-                                </div>
-
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-xl-6">
-                    <a href="#" class="wapper__container">
-                        <div class="wapper__items" style="background-image: url(./assets/img/theme/laptop//bg.jpg);">
-                            <div class="wapper__up">
-                                <img src="./assets/img/items/logo-wapper.png" class="wapper__logo">
-                                <h4 class="wapper__collection">collection#160</h4>
-                            </div>
-                            <div class="wapper__down">
-                                <div class="wapper__date">
-                                    <h3 class="wapper__title">First Snow</h3>
-                                    <div class="wapper-down__bottom">
-                                        <div class="wapper__photos">
-                                            <h4 class="wapper-photos__name">PHOTOS</h4>
-                                            <h4 class="wapper-photos__number">132</h4>
-                                        </div>
-                                        <div class="wapper__publish">
-                                            <h4 class="wapper-publish__name">PUSBLISHED</h4>
-                                            <h4 class="wapper-publish__date">1 WEEK AGO</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="wapper__img-4">
-                                    <img src="./assets/img/theme/laptop/bg.jpg" class="wapper--img-4__img">
-                                </div>
-
-                            </div>
-                        </div>
-                    </a>
-                </div>
+                </div>   
 
                 <div class="col-xl-6">
                     <a href="#" class="wapper__container">
@@ -159,24 +105,88 @@
                                     </div>
                                 </div>
                                 <div class="wapper__img-4">
-                                    <img src="./assets/img/theme/iceland/bg.jpg" class="wapper--img-4__img">
+                                    <img src="./assets/img/theme/iceland/img-4.jpg" class="wapper--img-4__img">
                                 </div>
-
+                            </div>
+                            <div class="wapper__new">
+                                <img src="./assets/img/items/new.png" class="wapper--new__img">
                             </div>
                         </div>
                     </a>
-                </div>
-                
+                </div> 
+
+                <div class="col-xl-6">
+                    <a href="#" class="wapper__container">
+                        <div class="wapper__items" style="background-image: url(./assets/img/theme/food/bg.jpg);">
+                            <div class="wapper__up">
+                                <img src="./assets/img/items/logo-wapper.png" class="wapper__logo">
+                                <h4 class="wapper__collection">collection#160</h4>
+                            </div>
+                            <div class="wapper__down">
+                                <div class="wapper__date">
+                                    <h3 class="wapper__title">First Snow</h3>
+                                    <div class="wapper-down__bottom">
+                                        <div class="wapper__photos">
+                                            <h4 class="wapper-photos__name">PHOTOS</h4>
+                                            <h4 class="wapper-photos__number">132</h4>
+                                        </div>
+                                        <div class="wapper__publish">
+                                            <h4 class="wapper-publish__name">PUSBLISHED</h4>
+                                            <h4 class="wapper-publish__date">1 WEEK AGO</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="wapper__img-4">
+                                    <img src="./assets/img/theme/food/img-4.jpg" class="wapper--img-4__img">
+                                </div>
+                            </div>
+                            <div class="wapper__new">
+                                <img src="./assets/img/items/new.png" class="wapper--new__img">
+                            </div>
+                        </div>
+                    </a>
+                </div>  
+
+                <div class="col-xl-6">
+                    <a href="#" class="wapper__container">
+                        <div class="wapper__items" style="background-image: url(./assets/img/theme/laptop/bg.jpg);">
+                            <div class="wapper__up">
+                                <img src="./assets/img/items/logo-wapper.png" class="wapper__logo">
+                                <h4 class="wapper__collection">collection#160</h4>
+                            </div>
+                            <div class="wapper__down">
+                                <div class="wapper__date">
+                                    <h3 class="wapper__title">First Snow</h3>
+                                    <div class="wapper-down__bottom">
+                                        <div class="wapper__photos">
+                                            <h4 class="wapper-photos__name">PHOTOS</h4>
+                                            <h4 class="wapper-photos__number">132</h4>
+                                        </div>
+                                        <div class="wapper__publish">
+                                            <h4 class="wapper-publish__name">PUSBLISHED</h4>
+                                            <h4 class="wapper-publish__date">1 WEEK AGO</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="wapper__img-4">
+                                    <img src="./assets/img/theme/laptop/img-4.jpg" class="wapper--img-4__img">
+                                </div>
+                            </div>
+                            <div class="wapper__new">
+                                <img src="./assets/img/items/new.png" class="wapper--new__img">
+                            </div>
+                        </div>
+                    </a>
+                </div>                  
             </div>
         </div>
+
+        <!-- footer -->
+        <div class="container-fluid footer">
+            <h3 class="footer__text">Mọi vấn đề liên quán đến web LH: <span>henhhenh13@gmail.com</span></h3>
+        </div>
     </div>
-    
 
-
-
-
-
-    
 </body>
 
 </html>
