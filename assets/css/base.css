@@ -3,16 +3,26 @@
     --green-color: #97ba45;
     --black-color: #444;
     --text-color: #777;
+    --height-header: 70px
 
 }
 
 * {
     box-sizing: inherit;
+    text-decoration: none;
 }
 
 html {
     font-size: 62.5%;
     line-height: 1.6rem;
-    font-family: 'Times New Roman', Times, serif;
     box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+}
+
+.form-control-xl {
+    padding: 1rem .75rem;
+    font-size: 1.4rem;
 }
