@@ -1,0 +1,65 @@
+/* Page 2 */
+.images {
+
+}
+
+.images__items {
+    height: 320px !important;
+    margin-bottom: 20px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.images__items:hover .images__box {
+    transform: translateY(0);
+}
+
+.images-items__img {
+    width: 100%;
+    height: 100%;
+}
+
+.images__box {
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateY(100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: 0.5s ease;
+}
+
+.images__text {
+    margin: 5px;
+    color: var(--white-color);
+    font-size: 2rem;
+    font-weight: 500;
+    text-transform: capitalize;
+
+}
+
+.images-box__likes {
+    margin: 5px;
+}
+
+.images-box__like {
+    font-size: 1.6rem;
+    margin-right: 15px;
+    color: var(--white-color);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.images-box__like:hover {
+    color: #dadada;
+}
+
+.images-box__like-number {
+    margin-left: 3px;
+}
